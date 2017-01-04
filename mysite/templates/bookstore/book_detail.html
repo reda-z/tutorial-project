@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<a href="{% url 'bookstore'%}">Back to Books :</a>
+<h3>Title :{{ book.title | capfirst }}</h3>
+<p>Author :{{ book.author }}</p>
+<p>Type  :{{ book.type }}</p>
+<h4>Resume :</h4>
+<p>{{ book.resume }}</p>
+<p>{{ book.price }} dhs</p>
+{% endblock %}
